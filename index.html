@@ -164,12 +164,92 @@
     <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
     <map name="workmap">
-        <area shape="rect" target="_blank" coords="34,44,270,350" href="computer.html" alt="computer">
-        <area shape="rect" target="_blank" coords="290,172,333,250" href="phone.html" alt="phone">
-        <area shape="circle" target="_blank" coords="337,300,33" href="cup.html" alt="Cup of tea">
+        <area shape="rect" target="_blank" coords="34,44,270,350" onclick="computer()" href="computer.html" alt="computer">
+        <area shape="rect" target="_blank" coords="290,172,333,250" onclick="phone()" href="phone.html" alt="phone">
+        <area shape="circle" target="_blank" coords="337,300,33" onclick="coffee()" href="cup.html" alt="Cup of tea">
     </map>
 
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Lits</td>
+            <td>Faridpur</td>
+            <td>Bangladesh</td>
+        </tr>
+        
+        <tr>
+            <td>tios</td>
+            <td>Dhaka</td>
+            <td>Bangladesh</td>
+        </tr>
+        
+        <tr>
+            <td>nivs</td>
+            <td>Faridpur</td>
+            <td>Bangladesh</td>
+        </tr>
+    </table>
+<div class="just4">
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>TOBIAS</th>
+            <th>LINUS</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
+</div>
+    
+
+    <script>
+        function coffee(){
+            phone();
+            computer();
+            alert('You clicked the coffee cup!');
+        }
+        function phone()
+        {
+            alert('You clicked the phone! ');
+        }
+        function computer()
+        {
+            alert('You clicked the computer!')
+        }
+    </script>
 
 </body>
 </html>

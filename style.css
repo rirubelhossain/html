@@ -1,0 +1,41 @@
+
+.just2 a{
+    font-size: 60px;
+}
+.just2 a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.just2 a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.just2 a:visited{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+.just2 a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+.just2 a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.just3 a:link, a:visited{
+    background-color: yellow;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.just3 a:hover, a:active{
+    background-color: red;
+}

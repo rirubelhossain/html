@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .left{
+            background-color: red;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        .main{
+            background-color: greenyellow;
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+        .right{
+            background-color: hotpink;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+        /*Use a media query to add a break point at 800px*/
+        @media screen and (max-width: 800px) {
+            .left, .main , .right{
+                width: 100%;
+                
+            }
+        }
+        .left:hover{
+            background-color: lightblue;
+        }
+        .main:hover{
+            background-color: lightgreen;
+        }
+        .right:hover{
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+
+    <div class="left">
+        <p>Left Content</p>
+    </div>
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+
+</body>
+</html>

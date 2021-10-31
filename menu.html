@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        .menu ul li a{
+            text-decoration: none;
+            float: left;
+            background-color:greenyellow;
+            padding: 10px 20px;
+            
+        }
+        .menu ul li{
+            list-style-type: none;
+        }
+        .menu a:hover{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Navigation Menu</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+<br>
+<br>
+    <ol type="A">
+        <li>Book0</li>
+        <li>Book1</li>
+        <li>Book2</li>
+    </ol>
+<br>
+<button onclick="mycolor()">Color Elements</button>
+<h2 class="city">London</h2>
+<p class="city">London is the capital of England</p>
+
+<h2 class="city">Dhaka</h2>
+<p>Dhaka is the capital of Bangladesh</p>
+
+<h2 class="city">Dehli</h2>
+<button onclick="fun()">change_color</button>
+<p class="cl">Dehli is the capital of </p>
+
+<h2>How to used js in html</h2>
+<p id = "demo">JavaScript change every html documents</p>
+
+<button onclick="func()">Clik here!</button>
+
+<h2>Hello Check</h2>
+<p id = "rbl"></p>
+<button onclick="test_rubel(1)">check</button>
+<button onclick="test_rubel(2)">check</button>
+
+<script>
+    function test_rubel(a){
+        var store ;
+        if( a == 1)
+        {
+            store = "This is Rubel";
+        }
+        else if( a == 2)
+        {
+            store = "This is Rasel";
+        }
+        document.getElementById('rbl').innerHTML = store; 
+    }
+
+    function func(){
+        document.getElementById('demo').style.color = "black";
+        document.getElementById('demo').style.fontSize = "30px";
+        document.getElementById('demo').style.backgroundColor = "green";
+    }
+
+    function fun(){
+        var x = document.getElementsByClassName('cl');
+        var len = x.length ;
+        for(var i = 0 ; i < len ; ++i)
+        {
+            x[i].style.color = "green";
+        }
+        
+    }
+    function mycolor(){
+        var x = document.getElementsByClassName('city');
+
+        var len = x.length ;
+        for(var i = 0 ; i < len ; ++i)
+        {
+            x[i].style.color = "red";
+            
+        }
+    }
+</script>
+
+</body>
+</html>

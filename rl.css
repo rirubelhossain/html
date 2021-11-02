@@ -1,27 +1,28 @@
 *{
     box-sizing: border-box;
 }
-#customers{
+#rl{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
-#customers td , th{
+#rl td , th{
     border: 1px solid black;
     padding: 8px;
 }
-#customers th{
+#rl th{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #04AA6D;
     color: white;
-   
 }
-#customers tr:nth-child(even){
-    background: #f2f2f2;
+#rl tr:nth-child(even){
+    background-color: #f2f2f2;
 }
-#customers tr:hover{
-    background-color:#ddd;
+#rl tr:hover{
+    background-color: #ddd;
 }
-
+#rl td{
+    vertical-align: bottom;
+}

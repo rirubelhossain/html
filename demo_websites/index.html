@@ -69,6 +69,7 @@
     <p id = "check1"></p>
     <script>
         let nm = "1.2";
+        
         document.getElementById('check1').innerHTML = Number(nm);
 
         document.getElementById('check').innerHTML = typeof 100 + "<br>"+typeof ">Rubel Hossain"+
@@ -84,6 +85,15 @@
             text += jk[x]+" ";
         }
         document.getElementById('dem').innerHTML = text ;
+         
+
+    </script>
+        <p id ="hoisting"></p>
+    <script>
+        var x = 10 ;
+        var y = 20 ;
+        elem = document.getElementById('hoisting') ;
+        elem.innerHTML = x + y ;
     </script>
 </body>
 </html>

@@ -49,3 +49,10 @@ class yer{
 }   
 let catch_ = new yer('Rubel',3.55);
 document.getElementById('cl').innerHTML = catch_.name + " and " + catch_.result ;
+
+
+/*
+JASON FORMATE OF DATA
+"FirstName": "Rubel" ,
+LastName : Hossain ,
+*/

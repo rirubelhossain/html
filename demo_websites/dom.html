@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use DOM</title>
+    <style>
+        #container_relative{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        #animate_absolute{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id = "khela">This is paragraph type of content it can change HTML DOM</p>
+    <p id = "p10">This is old p type of elements os it can change</p>
+
+    <p id = "mala">DOM OF CSS</p>
+
+    <img id ="myimage" src="tt.jpg">
+
+
+    <h1>My First JavaScript Animation</h1>
+    <div id = "container_relative">
+        <div id = "animate_absolute">
+
+        </div>
+    </div>
+    <h2 onclick="cl(this);">click on </h2>
+    <button onclick="timepl()">Click here for Date!!</button>
+    <p id = "time"></p>
+    <button id="mybutton">check time and date</button>
+    <p id = "dis"></p>
+
+    <input type="text" id = "fname" onchange="fuck()"><br>
+    <input type="text" id = "fnamel" onchange="fuck1()"><br>
+    <button id="tt">Try</button>
+    <p id = "screen_width"></p>
+    <p id = "screen_height"></p>
+    <p id = "screen_avail"></p>
+    <p id = "screen_avail_width"></p>
+    <p id = "screen_color"></p>
+    <p id = "window_location"></p>
+    <p id = "window_hostname"></p>
+    <p id = "window_pathname"></p>
+    <p id = "window_protocol"></p>
+    <p id = "window_assign"></p>
+    <p id = "window_port"></p>
+    <p id = "window_history_back"></p>
+    
+
+    <button onclick="myfun()">try</button>
+    <p id = "press"></p>
+    <script>
+        function myfun(){
+            var text ;
+            if(confirm('press a button')){
+                text = "you pressed ok";
+            }else{
+                text = "You pressed canceled";
+            }
+            document.getElementById('press').innerHTML = text ;
+        }
+        document.getElementById('screen_width').innerHTML = screen.width ;
+        document.getElementById('screen_height').innerHTML = screen.height ;
+        document.getElementById('screen_avail').innerHTML = screen.availHeight ;
+        document.getElementById('screen_avail_width').innerHTML = screen.availWidth ;
+        document.getElementById('screen_color').innerHTML = screen.colorDepth ;
+        document.getElementById('window_location').innerHTML = window.location.href;
+        document.getElementById('window_hostname').innerHTML = window.location.hostname;
+        document.getElementById('window_pathname').innerHTML = window.location.pathname;
+        document.getElementById('window_protocol').innerHTML = window.location.protocol;
+        document.getElementById('window_assign').innerHTML = window.location.assign();
+        document.getElementById('window_port').innerHTML = window.location.port;
+        document.getElementById('window_history_back').innerHTML = window.history.back;
+        document.getElementById('tt').addEventListener('click', balda);
+        function balda()
+        {
+            alert("Hello World");
+        }
+        function fuck1(){
+            var x = document.getElementById('fname1') ;
+            x.value = x.value.toLowerCase() ;
+        }
+        function fuck(){
+            const x = document.getElementById('fname');
+            x.value = x.value.toUpperCase();
+        }
+        document.getElementById('mybutton').onclick = displaydate() ;
+        function displaydate()
+        {
+            document.getElementById('dis').innerHTML = Date() ;
+        }
+        function timepl()
+        {
+            document.getElementById('time').innerHTML = Date() ;
+        }
+        function cl(id){
+            id.innerHTML = "i am seriously love you";
+        }
+    </script>
+    <script src="dom.js"></script>
+</body>
+</html>

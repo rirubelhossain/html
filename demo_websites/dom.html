@@ -66,7 +66,23 @@
 
     <button onclick="mykhela()">Please click here to get promot</button>
     <p id ="prompt"></p>
+
+    <h2>JavaScript shows the geolocation</h2>
+    <p>click the button to get your coordinates.</p>
+    <button onclick="geolocation()">Try it</button>
+    <p id = "geo"></p>
     <script>
+        const x = document.getElementById('geo');
+        function geolocation(){
+            try{
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }catch{
+                x.innerHTML = err ;
+            }
+        }
+        function showPosition(position){
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Logitude: " + position.coords.longitude;
+        }
 
         function mykhela(){
             var text ;

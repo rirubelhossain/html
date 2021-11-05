@@ -60,8 +60,27 @@
     
 
     <button onclick="myfun()">try</button>
+
+
     <p id = "press"></p>
+
+    <button onclick="mykhela()">Please click here to get promot</button>
+    <p id ="prompt"></p>
     <script>
+
+        function mykhela(){
+            var text ;
+            let person = prompt("Please enter you name:","Rubel Hossain");
+            if(person == null || person == "")
+            {
+                text = "User canceled the prompt";
+            }
+            else{
+                text = "Hello " + person + "! how are you today?";
+            }
+            document.getElementById('prompt').innerHTML = text ;
+        }
+
         function myfun(){
             var text ;
             if(confirm('press a button')){

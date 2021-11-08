@@ -75,13 +75,16 @@
         const x = document.getElementById('geo');
         function geolocation(){
             try{
-                navigator.geolocation.getCurrentPosition(showPosition);
+                navigator.geolocation.getCurrentPosition(showgeoposition);
             }catch{
                 x.innerHTML = err ;
             }
         }
         function showPosition(position){
             x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Logitude: " + position.coords.longitude;
+        }
+        function showgeoposition(pos){
+            x.innerHTML = "Latitude: " + pos.coords.latitude + "<br> Longitude: " + pos.coords.longitude;
         }
 
         function mykhela(){

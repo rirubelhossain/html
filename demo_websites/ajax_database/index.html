@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Database</title>
+</head>
+<body>
+    <h2>The XMLHttpRequest Object</h2>
+
+    <form action="">
+        <select name="customers" onchange="showCustomer(this.value)">
+            <option value="">Select a customer:</option>
+            <option value="Rubel Hossain">Rubel</option>
+            <option value="NORTS">North/South</option>
+            <option value="WOLZA">Wolski Zajazd</option>
+        </select>
+    </form>
+
+    <div id="txtHint">Customer info will be listed here.......</div>
+    <script src="ajax_request.js"></script>
+
+</body>
+</html>
